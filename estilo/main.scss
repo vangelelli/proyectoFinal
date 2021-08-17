@@ -1,0 +1,669 @@
+@import "./partials/font";
+@import "./partials/colores";
+@import "./partials/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $fondo;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1, 5rem;
+    background-color: rgb(26, 26, 78);
+}
+
+.navbar .navbar-brand img {
+    width: 25rem;
+}
+
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+   
+.navbar-nav li a:hover{
+    background-color: $colorBackGround;
+    border-radius: 15px;
+    transition: all 1s;
+}   
+
+
+
+.carousel-inner {
+    height: 30rem;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.inicio {
+
+    &__intro {
+        margin: 2.5rem 1.5rem;
+        padding: auto;
+        text-align: $alineacion;
+
+    }
+
+   
+    &__subtitulo {
+        font-family: $fuentePrincipal;
+        font-size: 2rem;
+        text-align: $alineacion;
+        padding-top: 3rem;
+        margin: 2rem;
+        padding-bottom: 0rem;
+
+    }
+
+    &__texto {
+        font-family: $fuentePrincipal;
+        font-size: $texto;
+        padding-bottom: 1rem;
+        text-align: $alineacion;
+        padding-top: 0rem;
+
+    }
+}
+
+/* formulario de Inicio*/
+
+.form_wrap {
+    margin: 3rem auto;
+    display: flex;
+    border-radius: 10px;
+    background-image: url(../imagenes/cocinadefondo.jpeg)
+}
+
+.porque {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: $alineacion;
+    justify-content: $alineacion;
+
+    &__titulo {
+        margin-bottom: 40px;
+        font-size: 3rem;
+        text-align: $alineacion;
+        font-weight: $fuenteNegra;
+
+    }
+
+    &__lista {
+        margin-bottom: 20px;
+        font-weight: $fuenteNegra;
+        font-size: 1.30rem;
+        margin-bottom: 20px;
+        margin-top: 10px;
+     
+    }
+
+    &__lista span {
+        font-size: 2rem;
+        height: 1rem;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+}
+
+/* formulario de Inicio*/
+
+.main {
+
+    &__lineaDeSeparacion {
+        width: 300px;
+        height: 5px;
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    &__nuestraTrayectoria {
+        font-family: $fuentePrincipal;
+        font-weight: $fuentesLight;
+        text-align: $alineacion;
+        font-size: 2rem;
+        color: black;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    &__sobreNosotros {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: $alineacion;
+        font-size: 1.5rem;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    &__ejemplos {
+        padding: 2rem;
+    }
+}
+
+/*footer*/
+
+footer {
+    background-color: rgb(103, 106, 114);
+    border-top: black 5px solid;
+    border-bottom: black 5px solid;
+
+    .redes {
+        display: flex;
+        justify-content: $alineacion;
+
+        &__icono {
+            padding: .5rem .7rem;
+            width: 2rem;
+            text-decoration: none;
+            color: black;
+            font-size: 27px;
+            text-align: $alineacion;
+            display: flex;
+            margin: 1rem 0.5rem;
+            
+           
+        }
+
+        &__copyright {
+            font-family: $fuentePrincipal;
+            font-size: 15px;
+            text-align: $alineacion;
+        }
+    }
+   
+
+    .extra {
+
+        &__Contacto {
+
+            font-family: $fuentePrincipal;
+            font-weight: $fuenteReNegra;
+            font-size: 1.5rem;
+            text-align: $alineacion;
+
+        }
+
+        &__encontrarnos {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            font-weight: $fuentesLight;
+            text-align: $alineacion;
+
+        }
+
+        &__mapa {
+            width: 100vw;
+            height: 45vh;
+            display: flex;
+            justify-content: $alineacion;
+        }
+
+        &__mapa iframe {
+            width: $anchoCompleto;
+            height: $anchoCompleto/4;
+        }
+    }
+}
+
+/*footer*/
+
+/*index*/
+
+/*proyecto*/
+
+
+.proyecto{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__div{
+       padding: 25px; 
+       margin: 20px;
+    }
+    &__subtitulo{
+        flex:1;
+        font-size: $subtitulos;
+        font-family: $fuentePrincipal;
+        text-align: center;
+        padding: 25px;
+        min-width: 300px;
+    }
+    &__texto{
+        flex: 2;
+        font-family: $fuentePrincipal;
+        font-size: $texto;
+        text-align: $alineacion;
+        padding: 25px;
+        min-width: 300px;
+    
+    }
+}
+
+.Carta:hover {
+
+    transform: scale(1.1, 1.1);
+    transition: all 1s;
+}
+.Carta{
+    background-color: $colorBackGround;
+}
+
+.cardBody {
+    background-color: $colorBackGround;
+    height: 100%;
+    padding: 1rem 1rem;
+   
+
+    &__titulo {
+        font-size: $subtitulos;
+        font-weight: $fuenteNegra;
+        text-align: $alineacion;
+        color: rgb(213, 210, 223);
+
+    }
+
+    &__texto {
+        font-size: $texto;
+        font: kerning 1.2rem; 
+        text-align: $alineacion;
+        color: rgb(213, 210, 223);
+        
+    }
+
+
+}
+
+/*proyecto*/
+
+/*servicio*/
+
+.home{
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    min-width: 300px;
+    margin-bottom: 0%;
+
+    &__info {
+        font-family: $fuentePrincipal;
+        font-weight: $fuenteNegra;
+        font-size: 2.5rem;
+        text-align: $alineacion;
+        background-color: rgb(103, 106, 114);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: $fondo;
+    }
+
+    &__nuestros {
+        font-family: $fuentePrincipal;
+        font-size: 1.5rem;
+        text-align: $alineacion;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+
+    }
+    
+    &__herramienta{
+        font-size: 90px;
+        text-align: $alineacion;
+        margin: 1rem 2rem;
+        display: flex;
+        justify-content: $alineacion;
+        padding-bottom: 1rem;
+        
+
+    }
+}
+.lista li {
+       
+    flex: 2;
+    list-style-type:disc;
+    font-size: 1.5rem;
+    padding: 25px;
+    margin: 20px;
+    
+}
+section {
+    
+    margin: 1.5rem;
+}
+
+
+
+/*servicio*/
+
+/*galeria*/
+
+.galeria{
+    &__titulo{
+
+        font-size: 4rem;
+        font-family: $fuentePrincipal;
+        background-color: $colorBackGround;
+        color: $fondo;
+        text-align: $alineacion;
+        align-self: $alineacion;
+        font-weight: $fuenteReNegra;
+        animation-duration: 4s;
+        animation-name: aparecer;
+        margin-top: 6rem;
+        
+        
+         
+    }
+    &__subtitulo{
+        font-size: $subtitulos;
+        font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 3rem 3rem;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    
+    }
+    &__texto{
+        font-family: $fuentePrincipal;
+        font-size: $texto;
+        text-align: $alineacion;
+        padding-bottom: 1rem;   
+    }
+}
+
+.fotos {
+
+    
+    
+    &__nuestras {
+        display: flex;
+        justify-content: $alineacion;
+        align-items: $alineacion;
+        flex-wrap: wrap;
+        padding: 2rem 5rem 6rem 3rem;
+    }
+
+    &__nuestras img {
+        width: 21rem;
+        height: 20rem;
+        margin: 1rem 0.8rem;
+        padding: 2rem 2rem 2rem 2rem;
+
+    }
+
+    &__picture:hover {
+        transform: scale(1.5, 1.5);
+        transition: all 1.5s;
+    }
+
+    &__picture{
+        transition: all 1s ease-in-out;  
+    }
+    
+}
+
+
+/*galeria*/
+
+
+
+/* información de contacto*/
+
+.contacto{
+    
+    font-size: 4rem;
+    font-family: $fuentePrincipal;
+    background-color: $colorBackGround;
+    color: $fondo;
+    text-align: $alineacion;
+    align-self: $alineacion;
+    font-weight: $fuenteReNegra;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    margin-top: 6rem;
+      
+    
+    &__subtitulo{
+        font-size: $subtitulos;
+        font-family: $fuentePrincipal;
+        text-align: center;
+        margin: 3rem 3rem;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+
+    }
+    &__texto{
+        font-family: $fuentePrincipal;
+        font-size: $texto;
+        text-align: $alineacion;
+        padding-bottom: 2rem;
+
+    }
+}
+
+.formulario {
+    display: flex;
+    margin: 7em auto;
+}
+
+.contactoDeInfo::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.contactoDeInfo {
+    width: 55%;
+    position: relative;
+    background: $contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: $alineacion;
+    justify-content: $alineacion;
+    margin: 0;
+}
+
+.title {
+    font-family: $fuentePrincipal;
+    margin-bottom: 60px;
+    font-size: 35px;
+    text-align: $alineacion;
+}
+
+.fa-user {
+    font-size: 100px;
+    display: block;
+    text-align: $alineacion;
+    margin-bottom: 15px;
+}
+
+
+.infoItems p {
+    display: flex;
+    align-items: $alineacion;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fa-envelope-square {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.fa-phone-square {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+
+.formContact {
+    width: 50%;
+    padding: 30px 40px;
+    background-color: #fff;
+
+    &__h3 {
+        font-size: 3rem;
+        font-weight: $fuenteNegra;
+        margin-bottom: 30px;
+        padding: 1rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__boton {
+        background-color: rgb(192, 190, 199);
+        max-width: 10rem;
+        padding: 15px;
+        border: none;
+        border-radius: 25px;
+        align-self: flex-start;
+
+    }
+
+    &__boton:hover {
+        background-color: rgb(172, 171, 175);
+        transition: background-color 1s;
+    }
+}
+
+.formContact label {
+    font-weight: $fuenteNegra;
+    font-size: 1rem;
+}
+
+.formContact input,
+.formContact textarea {
+    width: 100%;
+    font-size: 1rem;
+    border-bottom: 2px;
+    padding: 8px 0px 5px;
+}
+
+/*contacto*/
+
+/*404*/
+
+
+.container-404{
+   
+    box-sizing: border-box;
+    font-family: $fuentePrincipal;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.error{
+    text-align: center;
+    background-color: $contacto;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    
+    &__boton{
+      display: inline-block;
+      text-decoration: none;
+      background-color: $fondo;
+      color:black;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+    }
+    
+   
+}
+.fa-exclamation-triangle{
+    display: flex;
+    align-items: $alineacion;
+    font-size: 2rem;
+    margin: 1rem ;
+}
+
+/*404*/
+
+/*media*/
+
+@media only screen and (max-width: 480px) {
+    
+    .contactoDeInfo{
+    
+        width: 100%;
+    }   
+    .formContact{
+        width: 100%;
+    }
+    .carousel-inner {
+        margin: 0%;
+        padding-top: 3rem;
+       padding-bottom: 0%;
+    }
+    &__intro {
+        margin: 0%;
+        padding: 0%;
+      
+
+    }
+    
+    
+    
+}
+@media only screen and (min-width: 1024px) {
+   
+    .contactoDeInfo{
+    
+        width: 100%;
+    }   
+    .formContact{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    
+    .contactoDeInfo{
+    
+        width: 100%;
+    }   
+    .formContact{
+        width: 100%;
+    }
+   
+    
+    
+}
+
