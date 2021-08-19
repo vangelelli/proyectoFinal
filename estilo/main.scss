@@ -267,14 +267,17 @@ footer {
 .Carta{
     background-color: $colorBackGround;
     padding-bottom: 2rem;
+   
 }
 .cartita{
     padding-bottom: 4rem;
 }
-
+.card__img{
+    padding-top: 0.6rem;
+}
 .cardBody {
     background-color: $colorBackGround;
-    height: 50%;
+    height: 100%;
     margin: 1rem;
    
 
@@ -291,6 +294,7 @@ footer {
         font: kerning 1.2rem; 
         text-align: $alineacion;
         color: rgb(213, 210, 223);
+        line-height: 1.9rem;
         
     }
 

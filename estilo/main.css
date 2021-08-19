@@ -283,9 +283,13 @@ footer .extra__mapa iframe {
   padding-bottom: 4rem;
 }
 
+.card__img {
+  padding-top: 0.6rem;
+}
+
 .cardBody {
   background-color: #676a72;
-  height: 50%;
+  height: 100%;
   margin: 1rem;
 }
 
@@ -301,6 +305,7 @@ footer .extra__mapa iframe {
   font: kerning 1.2rem;
   text-align: center;
   color: #d5d2df;
+  line-height: 1.9rem;
 }
 
 /*proyecto*/
