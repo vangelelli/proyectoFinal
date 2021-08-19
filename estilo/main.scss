@@ -266,12 +266,16 @@ footer {
 }
 .Carta{
     background-color: $colorBackGround;
+    padding-bottom: 2rem;
+}
+.cartita{
+    padding-bottom: 4rem;
 }
 
 .cardBody {
     background-color: $colorBackGround;
-    height: 100%;
-    padding: 1rem 1rem;
+    height: 50%;
+    margin: 1rem;
    
 
     &__titulo {
