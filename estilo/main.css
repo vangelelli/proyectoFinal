@@ -41,6 +41,14 @@ body {
   transition: all 1s;
 }
 
+.carousel .carousel-indicators {
+  background-color: black !important;
+}
+
+.carousel .carousel-indicators .carousel-control-prev-icon {
+  background-color: #212529 !important;
+}
+
 .carousel-inner {
   height: 30rem;
 }

@@ -37,6 +37,16 @@ body {
 
 
 
+.carousel {
+    .carousel-indicators {
+        background-color: black !important;
+        .carousel-control-prev-icon {
+            background-color: #212529 !important;
+        }
+    }
+}
+
+
 .carousel-inner {
     height: 30rem;
 }
@@ -258,6 +268,9 @@ footer {
     
     }
 }
+
+
+
 
 .Carta:hover {
 
