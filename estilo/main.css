@@ -53,6 +53,10 @@ body {
   height: 30rem;
 }
 
+.bannerMobile {
+  display: none;
+}
+
 @-webkit-keyframes aparecer {
   0% {
     opacity: 0;
@@ -662,7 +666,19 @@ section {
 /*404*/
 /*media*/
 @media only screen and (max-width: 480px) {
+  .carousel {
+    display: none !important;
+  }
+  .navbar .navbar-brand img {
+    width: 8rem !important;
+  }
+  .navbar-collapse {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
   .contactoDeInfo {
+    padding: 5em 0;
     width: 100%;
   }
   .formContact {
@@ -677,6 +693,15 @@ section {
     margin: 0%;
     padding: 0%;
   }
+  .formulario {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bannerMobile {
+    display: block !important;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -689,10 +714,26 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
+  .navbar .navbar-brand img {
+    width: 15rem;
+  }
   .contactoDeInfo {
+    padding: 5em 0;
     width: 100%;
   }
   .formContact {
     width: 100%;
+  }
+  .formulario {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel {
+    display: none !important;
+  }
+  .bannerMobile {
+    display: block !important;
   }
 }
