@@ -285,6 +285,8 @@ footer .extra__mapa iframe {
 .Carta {
   background-color: #676a72;
   padding-bottom: 2rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .cartita {
@@ -677,6 +679,14 @@ section {
         -ms-flex-align: center !important;
             align-items: center !important;
   }
+  .contacto {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .contacto__texto {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
   .contactoDeInfo {
     padding: 5em 0;
     width: 100%;
@@ -684,14 +694,42 @@ section {
   .formContact {
     width: 100%;
   }
+  .formContact__boton {
+    margin-top: 1rem;
+  }
   .carousel-inner {
     margin: 0%;
     padding-top: 3rem;
     padding-bottom: 0%;
   }
-  __intro {
+  .inicio__intro {
     margin: 0%;
     padding: 0%;
+  }
+  .inicio__subtitulo {
+    padding-top: 1rem;
+    font-size: 1.7rem;
+  }
+  .proyecto__subtitulo {
+    font-size: 2rem;
+    margin-bottom: 0%;
+    margin-top: 2rem;
+    padding-top: 0%;
+  }
+  .proyecto__div {
+    margin: auto;
+    padding: 0;
+  }
+  .cardBody__titulo {
+    font-size: 1.7rem;
+  }
+  .galeria__titulo {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .galeria__subtitulo {
+    margin-top: 2rem;
+    font-size: 2rem;
   }
   .formulario {
     -webkit-box-orient: vertical;
@@ -701,6 +739,20 @@ section {
   }
   .bannerMobile {
     display: block !important;
+    padding-top: 1rem;
+  }
+  section {
+    margin: 0rem;
+  }
+  section .servicio__info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+  }
+  section .servicio__nuestros {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    line-height: 1.2;
   }
 }
 
