@@ -223,7 +223,7 @@ footer .extra__encontrarnos {
 
 footer .extra__mapa {
   width: 100vw;
-  height: 45vh;
+  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,6 +757,7 @@ section {
   }
   .formContact {
     width: 100%;
+    padding-bottom: 0%;
   }
   .formContact__boton {
     margin-top: 1rem;
@@ -766,6 +767,9 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .extra__encontrarnos {
+    font-size: 1.5rem !important;
   }
   /*fin contacto*/
 }
