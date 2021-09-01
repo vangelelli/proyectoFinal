@@ -400,6 +400,7 @@ section {
         animation-duration: 4s;
         animation-name: aparecer;
         margin-top: 6rem;
+        width: 100%;
       
         
         
@@ -579,7 +580,8 @@ section {
     &__boton {
         background-color: rgb(192, 190, 199);
         max-width: 10rem;
-        padding: 15px;
+        padding: 2rem;
+        margin-top: 1rem;
         border: none;
         border-radius: 25px;
         align-self: flex-start;
@@ -587,7 +589,7 @@ section {
     }
 
     &__boton:hover {
-        background-color: rgb(172, 171, 175);
+        background-color: rgb(146, 144, 150);
         transition: background-color 1s;
     }
 }
@@ -608,7 +610,6 @@ section {
 /*contacto*/
 
 /*404*/
-
 
 .container-404{
    
@@ -651,25 +652,96 @@ section {
 
 @media only screen and (max-width: 480px) {
     
-    
-    .carousel {
-       display: none !important;
-    }
-
+    /*inicio*/
+   
     .navbar .navbar-brand img {
         width: 8rem !important;
     }
-
     .navbar-collapse {
-      
-            align-items: center !important;
-        
-        
+      align-items: center !important;
+            
     }
-    .contacto{
+    .carousel {
+        display: none !important;
+    }
+    .carousel-inner {
+        margin: 0%;
+        padding-top: 3rem;
+       padding-bottom: 0%;
+    }
+    .inicio__intro {
+        margin: 0%;
+        padding: 0%;
+    }
+    .inicio__subtitulo{
+        padding-top: 1rem;
+        font-size: 1.7rem;
+    }
+    .bannerMobile {
+        display: block !important;
+        padding-top: 1rem;
+    }
+
+    /*fin inicio*/ 
+
+    /*proyecto*/
+
+    .proyecto__subtitulo{
+        font-size: 2rem;
+        margin-bottom: 0%;
+        margin-top: 2rem;
+        padding-top: 0%;
+    }
+    .proyecto__div{
+        margin: auto;
+        padding: 0;
+    }
+    .cardBody__titulo{
+        font-size: 1.7rem;
+    }
+
+    /*fin proyecto*/
+   
+    /*servicio*/
+
+    section{
+        margin: 0rem;
+    }
+   
+    .servicio__info{ 
+        font-size: 2rem;
+        margin-top: 2rem;       
+    }
+    .servicio__nuestros{
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        line-height: 1.2;
+    }
+     .servicio{
+        margin: 0%;     
+    }
+
+    /*fin servicio*/
+
+    /*galeria*/ 
+
+    .galeria__titulo{
         font-size: 3rem;
         margin-top: 2rem;
-       
+        
+    }
+    .galeria__subtitulo{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    /*fin galeria*/
+
+    /*contacto*/
+
+    .contacto{
+        font-size: 3rem;
+        margin-top: 2rem;   
     }
     .contacto__texto{
         padding-bottom: 0%;
@@ -686,78 +758,18 @@ section {
        margin-top: 1rem;
     }
     
-    .carousel-inner {
-        margin: 0%;
-        padding-top: 3rem;
-       padding-bottom: 0%;
-    }
-    .inicio__intro {
-        margin: 0%;
-        padding: 0%;
-      
-
-    }
-    .inicio__subtitulo{
-        padding-top: 1rem;
-        font-size: 1.7rem;
-    }
-    .proyecto__subtitulo{
-        font-size: 2rem;
-        margin-bottom: 0%;
-        margin-top: 2rem;
-        padding-top: 0%;
-    }
-    .proyecto__div{
-        margin: auto;
-        padding: 0;
-    }
-    .cardBody__titulo{
-        font-size: 1.7rem;
-    }
-    .galeria__titulo{
-        font-size: 3rem;
-        margin-top: 2rem;
-        
-    }
-    .galeria__subtitulo{
-        margin-top: 2rem;
-        font-size: 2rem;
-    }
-
-
     .formulario {
         flex-direction: column ;
     }
-
-  .bannerMobile {
-      display: block !important;
-      padding-top: 1rem;
-  }
     
-  section {
-    
-    margin: 0rem;
-
-    .servicio__info{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 2rem;
-    }
-    .servicio__nuestros{
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
-        line-height: 1.2;
-    }
+    /*fin contacto*/  
 }
 
-    
-}
 @media only screen and (min-width: 1024px) {
    
     .contactoDeInfo{
     
         width: 100%;
-
     }   
     .formContact{
         width: 100%;
@@ -769,6 +781,12 @@ section {
     .navbar .navbar-brand img {
         width: 15rem;
     }
+    .carousel {
+        display: none !important;
+    }
+    .bannerMobile {
+        display: block !important;
+    }
     .contactoDeInfo{
         padding: 5em 0;
         width: 100%;
@@ -776,20 +794,8 @@ section {
     .formContact{
         width: 100%;
     }
-   
-
-    
     .formulario {
         flex-direction: column ;
-    }
-
-    .carousel {
-        display: none !important;
-    }
-    
-    
-  .bannerMobile {
-    display: block !important;
-}
+    } 
 }
 
